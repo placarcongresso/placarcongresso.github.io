@@ -1,17 +1,11 @@
-.content {
-  width: 95%;
-  margin: auto;
-}
-
 /* Global styles */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
 }
-
 
 a {
   color: #ffffff;
@@ -24,7 +18,7 @@ a:hover {
 
 /* Header styles */
 header {
-  background-color: #2BBD36;
+  background-color: #2bbd36;
   padding: 20px;
 }
 
@@ -54,10 +48,10 @@ p {
 
 /* Footer styles */
 footer {
-  background-color: #2BBD36;
+  background-color: #2bbd36;
   padding: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 footer p {
@@ -66,15 +60,15 @@ footer p {
 
 /* Button styles */
 button {
-  background-color: #4CD0E5;
-  color: #FFFFFF;
+  background-color: #4cd0e5;
+  color: #ffffff;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #2BBD36;
+  background-color: #2bbd36;
 }
 
 /* Forms styles */
@@ -89,14 +83,14 @@ label {
 
 input {
   padding: 5px;
-  border: 1px solid #B3B3B3;
+  border: 1px solid #b3b3b3;
 }
 
 textarea {
   width: 100%;
   height: 100px;
   padding: 5px;
-  border: 1px solid #B3B3B3;
+  border: 1px solid #b3b3b3;
 }
 
 .floating-bar {
@@ -128,11 +122,23 @@ textarea {
   color: #fff;
   font-size: 16px;
   padding: 5px 10px;
-  background-color: #25BD4B;
+  background-color: #25bd4b;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
 
 .floating-bar ul li a:hover {
-  background-color: #03A9F4;
+  background-color: #03a9f4;
+}
+
+.content {
+  width: 95%;
+  margin: auto;
+}
+
+.content iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
