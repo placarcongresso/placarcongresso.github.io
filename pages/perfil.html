@@ -46,35 +46,38 @@
   </head>
 
   <body>
-    <div class="floating-bar">
-      <img src="/images/logo-dark.png" width="300" />
-      <ul>
-        <li><a href="/pages/ranking.html">Ranking Alinhamento</a></li>
-        <li><a href="/pages/votos.html">Votos Deputado</a></li>
-        <li><a href="/pages/perfil.html">Perfil Deputado</a></li>
-        <li><a href="/pages/ufs.html">Análise Estados</a></li>
-        <li><a href="/pages/partidos.html">Análise Partidos</a></li>
-      </ul>
-    </div>
-    <main>
-      <div class="content">
-        <iframe
-          id="content-iframe"
-          title="Placar Congresso"
-          src="https://app.powerbi.com/view?r=eyJrIjoiOTYwYmYyYWEtYzRmYi00M2EwLWFjYjgtYjJiMDc5ZTg0ODk4IiwidCI6IjhhN2VkZTZhLWU0MjgtNGE5ZS04NzJkLWIwMjdkNGUxMDM1MCJ9&pageName=ReportSection0b81092c3b83796a5088"
-          frameborder="0"
-          allowfullscreen="true"
-        ></iframe>
+    <div class="wrapper">
+      <div class="floating-bar">
+        <img src="/images/logo-dark.png" width="300" />
+        <ul>
+          <li><a href="/pages/ranking.html">Ranking Alinhamento</a></li>
+          <li><a href="/pages/votos.html">Votos Deputado</a></li>
+          <li><a href="/pages/perfil.html">Perfil Deputado</a></li>
+          <li><a href="/pages/ufs.html">Análise Estados</a></li>
+          <li><a href="/pages/partidos.html">Análise Partidos</a></li>
+        </ul>
       </div>
-    </main>
-    <script src="/js/layout.js"></script>
-    <footer>
-      <p>
-        &copy; 2023 Placar Congresso・Fonte:
-        <a href="https://dadosabertos.camara.leg.br/" target="_blank"
-          >Dados Abertos da Câmara dos Deputados</a
-        >
-      </p>
-    </footer>
+      <main>
+        <div class="content">
+          <iframe
+            id="content-iframe"
+            title="Placar Congresso"
+            src="https://app.powerbi.com/view?r=eyJrIjoiOTYwYmYyYWEtYzRmYi00M2EwLWFjYjgtYjJiMDc5ZTg0ODk4IiwidCI6IjhhN2VkZTZhLWU0MjgtNGE5ZS04NzJkLWIwMjdkNGUxMDM1MCJ9&pageName=ReportSection0b81092c3b83796a5088"
+            frameborder="0"
+            allowfullscreen="true"
+          ></iframe>
+        </div>
+      </main>
+      <script src="/js/layout.js"></script>
+      <footer>
+        <p class="footnote">
+          Fonte:
+          <a href="https://dadosabertos.camara.leg.br/" target="_blank"
+            >Dados Abertos da Câmara dos Deputados</a
+          >
+        </p>
+        <p>&copy; 2023 Placar Congresso</p>
+      </footer>
+    </div>
   </body>
 </html>
