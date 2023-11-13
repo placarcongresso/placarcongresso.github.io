@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Placar Congresso</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/images/icon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=YOUR_GOOGLE_ANALYTICS_TRACKING_ID"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || []
+
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+      gtag("config", "YOUR_GOOGLE_ANALYTICS_TRACKING_ID")
+    </script>
+  </head>
+  <body>
+    <div class="floating-bar">
+      <img src="/images/logo-dark.png" width="300" />
+      <ul>
+        <li><a href="/pages/ranking.html">Ranking Alinhamento</a></li>
+        <li><a href="/pages/votos.html">Votos Deputado</a></li>
+        <li><a href="/pages/perfil.html">Perfil Deputado</a></li>
+        <li><a href="/pages/ufs.html">Análise Estados</a></li>
+        <li><a href="/pages/partidos.html">Análise Partidos</a></li>
+      </ul>
+    </div>
+    <main>
+      <div class="content">
+        <iframe
+          title="Placar Congresso"
+          width="100%"
+          height="1200"
+          src="https://app.powerbi.com/view?r=eyJrIjoiOTYwYmYyYWEtYzRmYi00M2EwLWFjYjgtYjJiMDc5ZTg0ODk4IiwidCI6IjhhN2VkZTZhLWU0MjgtNGE5ZS04NzJkLWIwMjdkNGUxMDM1MCJ9&pageName=ReportSectiona77e139c0de11fcb4785"
+          frameborder="0"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2023 Placar Congresso・<a
+          href="https://dadosabertos.camara.leg.br/"
+          target="_blank"
+          >Dados Abertos da Câmara dos Deputados</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
