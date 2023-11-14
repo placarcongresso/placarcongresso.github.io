@@ -160,3 +160,9 @@ main {
   display: block;
   margin: auto;
 }
+
+@media (max-width: 768px) {
+  #iframe-ranking {
+    src: "https://www.nfl.com";
+  }
+}
