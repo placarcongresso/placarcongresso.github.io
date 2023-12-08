@@ -2,7 +2,7 @@ const iframeElement = document.getElementById('iframe-ranking');
 if (iframeElement) {
   window.addEventListener('resize', () => {
     const iframeWidth = iframeElement.offsetWidth;
-    const iframeHeight = iframeWidth * 8.5;
+    const iframeHeight = iframeWidth * 8.2;
 
     iframeElement.style.height = iframeHeight + 'px';
   });
