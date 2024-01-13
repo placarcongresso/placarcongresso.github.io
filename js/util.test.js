@@ -26,14 +26,20 @@ describe('isMobile', () => {
 
 
 describe('rankingURL', () => {
-  wantMaxWidth = 768;
-
   mobileURL = "https://app.powerbi.com/view?r=eyJrIjoiOTYwYmYyYWEtYzRmYi00M2EwLWFjYjgtYjJiMDc5ZTg0ODk4IiwidCI6IjhhN2VkZTZhLWU0MjgtNGE5ZS04NzJkLWIwMjdkNGUxMDM1MCJ9&pageName=ReportSection71b50ba615d17479414a"
+
+  desktopURL = "https://app.powerbi.com/view?r=eyJrIjoiOTYwYmYyYWEtYzRmYi00M2EwLWFjYjgtYjJiMDc5ZTg0ODk4IiwidCI6IjhhN2VkZTZhLWU0MjgtNGE5ZS04NzJkLWIwMjdkNGUxMDM1MCJ9&pageName=ReportSectioncab5881aaee03387ae73"
 
   test('should return mobile version when on mobile', () => {
     setWindowWidth(window, 720);
 
     expect(rankingURL(window)).toBe(mobileURL);
+  });
+
+  test('should return desktop version when not on mobile', () => {
+    setWindowWidth(window, 800);
+
+    expect(rankingURL(window)).toBe(desktopURL);
   });
 });
 
