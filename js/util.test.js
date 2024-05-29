@@ -25,6 +25,15 @@ describe('isMobile', () => {
 });
 
 
+// TODO: make this test pass
+describe('screen', () => {
+  test('should get a media query for the screen', () => {
+    expect(util.screen(window)).toBeInstanceOf(MediaQueryList);
+  });
+
+});
+
+
 describe('rankingURL', () => {
   let mobileURL = "https://app.powerbi.com/view?r=eyJrIjoiOTYwYmYyYWEtYzRmYi00M2EwLWFjYjgtYjJiMDc5ZTg0ODk4IiwidCI6IjhhN2VkZTZhLWU0MjgtNGE5ZS04NzJkLWIwMjdkNGUxMDM1MCJ9&pageName=ReportSection71b50ba615d17479414a"
 

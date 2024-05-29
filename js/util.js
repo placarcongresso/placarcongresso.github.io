@@ -11,3 +11,6 @@ export function rankingURL(window) {
   return "https://app.powerbi.com/view?r=eyJrIjoiOTYwYmYyYWEtYzRmYi00M2EwLWFjYjgtYjJiMDc5ZTg0ODk4IiwidCI6IjhhN2VkZTZhLWU0MjgtNGE5ZS04NzJkLWIwMjdkNGUxMDM1MCJ9&pageName=ReportSectioncab5881aaee03387ae73";
 }
 
+export function screen(window) {
+  return window.matchMedia('screen');
+}
