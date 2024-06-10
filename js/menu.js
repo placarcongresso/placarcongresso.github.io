@@ -1,11 +1,11 @@
-window.onload = function() {
-  var navbar = document.getElementById("navbar");
+window.onload = function () {
   var icon = document.getElementById("icon");
-  icon.addEventListener('click', function() {
-    if (navbar.className === "navbar") {
-      navbar.className += " responsive";
+  var navLinks = document.getElementById("nav-links");
+  icon.addEventListener('click', function () {
+    if (navLinks.style.display === "none") {
+      navLinks.style.display = "block";
     } else {
-      navbar.className = "navbar";
+      navLinks.style.display = "none";
     }
   });
 }

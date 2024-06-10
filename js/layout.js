@@ -29,10 +29,3 @@ if (contentIframe) {
     loadingCircle.style.display = 'none';
   });
 }
-
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navLinks = document.querySelector('.floating-bar ul');
-
-hamburgerMenu.addEventListener('click', () => {
-  navLinks.style.transform = navLinks.style.transform === 'translateX(0%)' ? 'translateX(-100%)' : 'translateX(0%)';
-});
