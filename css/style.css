@@ -143,11 +143,6 @@ textarea {
   height: 100%;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Main content styles */
 main {
   margin-top: auto;
@@ -159,4 +154,47 @@ main {
   height: 50px;
   display: block;
   margin: auto;
+}
+
+/* Navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #141615;
+  position: fixed; /* Changed from relative to fixed */
+  padding: 3px 0;
+  width: 100%; /* Ensures the navbar spans the full width */
+  z-index: 1000; /* High value to ensure navbar is above all other content */
+}
+
+.navbar a.icon {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar .logo {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 50px;
+  z-index: 1001; /* Higher than navbar's z-index to ensure logo is above navbar */
+}
+
+#nav-links {
+  display: none;
+  clear: both;
+}
+
+#nav-links a {
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
