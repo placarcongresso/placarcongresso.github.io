@@ -1,11 +1,13 @@
 window.onload = function () {
-  var icon = document.getElementById("icon");
-  var navLinks = document.getElementById("nav-links");
+  // Assuming your icon has the id 'icon' and your menu has the id 'nav-links'
+  var icon = document.getElementById('icon');
+  var menu = document.getElementById('nav-links');
+
   icon.addEventListener('click', function () {
-    if (navLinks.style.display === "none") {
-      navLinks.style.display = "block";
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'block';
     } else {
-      navLinks.style.display = "none";
+      menu.style.display = 'none';
     }
   });
 }
