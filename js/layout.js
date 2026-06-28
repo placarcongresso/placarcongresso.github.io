@@ -2,7 +2,10 @@ const iframeElement = document.getElementById('iframe-ranking');
 if (iframeElement) {
   window.addEventListener('resize', () => {
     const iframeWidth = iframeElement.offsetWidth;
-    const iframeHeight = iframeWidth * 9.2;
+    // Power BI report canvas is 1050px wide × 9950px tall. Match that aspect
+    // ratio so the report fits to width and the iframe is exactly tall enough,
+    // avoiding Power BI's own internal vertical scrollbar.
+    const iframeHeight = iframeWidth * (9950 / 1050);
 
     iframeElement.style.height = iframeHeight + 'px';
   });
